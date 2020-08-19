@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2050B86524EDC3B200BF381F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B86424EDC3B200BF381F /* AppDelegate.swift */; };
+		2050B86724EDC3B200BF381F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B86624EDC3B200BF381F /* SceneDelegate.swift */; };
+		2050B86924EDC3B200BF381F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B86824EDC3B200BF381F /* ViewController.swift */; };
+		2050B86B24EDC3B300BF381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2050B86A24EDC3B300BF381F /* Assets.xcassets */; };
+		2050B86E24EDC3B300BF381F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2050B86C24EDC3B300BF381F /* LaunchScreen.storyboard */; };
+		2050B87924EDC3B300BF381F /* FeelingAnalysisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B87824EDC3B300BF381F /* FeelingAnalysisAppTests.swift */; };
+		2050B88424EDC3B300BF381F /* FeelingAnalysisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B88324EDC3B300BF381F /* FeelingAnalysisAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2050B87524EDC3B300BF381F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2050B85924EDC3B200BF381F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2050B86024EDC3B200BF381F;
+			remoteInfo = FeelingAnalysisApp;
+		};
+		2050B88024EDC3B300BF381F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2050B85924EDC3B200BF381F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2050B86024EDC3B200BF381F;
+			remoteInfo = FeelingAnalysisApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2050B86124EDC3B200BF381F /* FeelingAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelingAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2050B86424EDC3B200BF381F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2050B86624EDC3B200BF381F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2050B86824EDC3B200BF381F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2050B86A24EDC3B300BF381F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2050B86D24EDC3B300BF381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2050B86F24EDC3B300BF381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2050B87424EDC3B300BF381F /* FeelingAnalysisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingAnalysisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2050B87824EDC3B300BF381F /* FeelingAnalysisAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingAnalysisAppTests.swift; sourceTree = "<group>"; };
+		2050B87A24EDC3B300BF381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2050B87F24EDC3B300BF381F /* FeelingAnalysisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingAnalysisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2050B88324EDC3B300BF381F /* FeelingAnalysisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingAnalysisAppUITests.swift; sourceTree = "<group>"; };
+		2050B88524EDC3B300BF381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2050B85E24EDC3B200BF381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2050B87124EDC3B300BF381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2050B87C24EDC3B300BF381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2050B85824EDC3B200BF381F = {
+			isa = PBXGroup;
+			children = (
+				2050B86324EDC3B200BF381F /* FeelingAnalysisApp */,
+				2050B87724EDC3B300BF381F /* FeelingAnalysisAppTests */,
+				2050B88224EDC3B300BF381F /* FeelingAnalysisAppUITests */,
+				2050B86224EDC3B200BF381F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2050B86224EDC3B200BF381F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2050B86124EDC3B200BF381F /* FeelingAnalysisApp.app */,
+				2050B87424EDC3B300BF381F /* FeelingAnalysisAppTests.xctest */,
+				2050B87F24EDC3B300BF381F /* FeelingAnalysisAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2050B86324EDC3B200BF381F /* FeelingAnalysisApp */ = {
+			isa = PBXGroup;
+			children = (
+				2050B86424EDC3B200BF381F /* AppDelegate.swift */,
+				2050B86624EDC3B200BF381F /* SceneDelegate.swift */,
+				2050B86824EDC3B200BF381F /* ViewController.swift */,
+				2050B86A24EDC3B300BF381F /* Assets.xcassets */,
+				2050B86C24EDC3B300BF381F /* LaunchScreen.storyboard */,
+				2050B86F24EDC3B300BF381F /* Info.plist */,
+			);
+			path = FeelingAnalysisApp;
+			sourceTree = "<group>";
+		};
+		2050B87724EDC3B300BF381F /* FeelingAnalysisAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2050B87824EDC3B300BF381F /* FeelingAnalysisAppTests.swift */,
+				2050B87A24EDC3B300BF381F /* Info.plist */,
+			);
+			path = FeelingAnalysisAppTests;
+			sourceTree = "<group>";
+		};
+		2050B88224EDC3B300BF381F /* FeelingAnalysisAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2050B88324EDC3B300BF381F /* FeelingAnalysisAppUITests.swift */,
+				2050B88524EDC3B300BF381F /* Info.plist */,
+			);
+			path = FeelingAnalysisAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2050B86024EDC3B200BF381F /* FeelingAnalysisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2050B88824EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisApp" */;
+			buildPhases = (
+				2050B85D24EDC3B200BF381F /* Sources */,
+				2050B85E24EDC3B200BF381F /* Frameworks */,
+				2050B85F24EDC3B200BF381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeelingAnalysisApp;
+			productName = FeelingAnalysisApp;
+			productReference = 2050B86124EDC3B200BF381F /* FeelingAnalysisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2050B87324EDC3B300BF381F /* FeelingAnalysisAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2050B88B24EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisAppTests" */;
+			buildPhases = (
+				2050B87024EDC3B300BF381F /* Sources */,
+				2050B87124EDC3B300BF381F /* Frameworks */,
+				2050B87224EDC3B300BF381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2050B87624EDC3B300BF381F /* PBXTargetDependency */,
+			);
+			name = FeelingAnalysisAppTests;
+			productName = FeelingAnalysisAppTests;
+			productReference = 2050B87424EDC3B300BF381F /* FeelingAnalysisAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2050B87E24EDC3B300BF381F /* FeelingAnalysisAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2050B88E24EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisAppUITests" */;
+			buildPhases = (
+				2050B87B24EDC3B300BF381F /* Sources */,
+				2050B87C24EDC3B300BF381F /* Frameworks */,
+				2050B87D24EDC3B300BF381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2050B88124EDC3B300BF381F /* PBXTargetDependency */,
+			);
+			name = FeelingAnalysisAppUITests;
+			productName = FeelingAnalysisAppUITests;
+			productReference = 2050B87F24EDC3B300BF381F /* FeelingAnalysisAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2050B85924EDC3B200BF381F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Decio Montanhani";
+				TargetAttributes = {
+					2050B86024EDC3B200BF381F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					2050B87324EDC3B300BF381F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 2050B86024EDC3B200BF381F;
+					};
+					2050B87E24EDC3B300BF381F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 2050B86024EDC3B200BF381F;
+					};
+				};
+			};
+			buildConfigurationList = 2050B85C24EDC3B200BF381F /* Build configuration list for PBXProject "FeelingAnalysisApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2050B85824EDC3B200BF381F;
+			productRefGroup = 2050B86224EDC3B200BF381F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2050B86024EDC3B200BF381F /* FeelingAnalysisApp */,
+				2050B87324EDC3B300BF381F /* FeelingAnalysisAppTests */,
+				2050B87E24EDC3B300BF381F /* FeelingAnalysisAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2050B85F24EDC3B200BF381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2050B86B24EDC3B300BF381F /* Assets.xcassets in Resources */,
+				2050B86E24EDC3B300BF381F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2050B87224EDC3B300BF381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2050B87D24EDC3B300BF381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2050B85D24EDC3B200BF381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2050B86924EDC3B200BF381F /* ViewController.swift in Sources */,
+				2050B86524EDC3B200BF381F /* AppDelegate.swift in Sources */,
+				2050B86724EDC3B200BF381F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2050B87024EDC3B300BF381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2050B87924EDC3B300BF381F /* FeelingAnalysisAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2050B87B24EDC3B300BF381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2050B88424EDC3B300BF381F /* FeelingAnalysisAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2050B87624EDC3B300BF381F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2050B86024EDC3B200BF381F /* FeelingAnalysisApp */;
+			targetProxy = 2050B87524EDC3B300BF381F /* PBXContainerItemProxy */;
+		};
+		2050B88124EDC3B300BF381F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2050B86024EDC3B200BF381F /* FeelingAnalysisApp */;
+			targetProxy = 2050B88024EDC3B300BF381F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2050B86C24EDC3B300BF381F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2050B86D24EDC3B300BF381F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2050B88624EDC3B300BF381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2050B88724EDC3B300BF381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2050B88924EDC3B300BF381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2P948Y69;
+				INFOPLIST_FILE = FeelingAnalysisApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2050B88A24EDC3B300BF381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2P948Y69;
+				INFOPLIST_FILE = FeelingAnalysisApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2050B88C24EDC3B300BF381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2P948Y69;
+				INFOPLIST_FILE = FeelingAnalysisAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeelingAnalysisApp.app/FeelingAnalysisApp";
+			};
+			name = Debug;
+		};
+		2050B88D24EDC3B300BF381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2P948Y69;
+				INFOPLIST_FILE = FeelingAnalysisAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeelingAnalysisApp.app/FeelingAnalysisApp";
+			};
+			name = Release;
+		};
+		2050B88F24EDC3B300BF381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2P948Y69;
+				INFOPLIST_FILE = FeelingAnalysisAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeelingAnalysisApp;
+			};
+			name = Debug;
+		};
+		2050B89024EDC3B300BF381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS2P948Y69;
+				INFOPLIST_FILE = FeelingAnalysisAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeelingAnalysisApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2050B85C24EDC3B200BF381F /* Build configuration list for PBXProject "FeelingAnalysisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2050B88624EDC3B300BF381F /* Debug */,
+				2050B88724EDC3B300BF381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2050B88824EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2050B88924EDC3B300BF381F /* Debug */,
+				2050B88A24EDC3B300BF381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2050B88B24EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2050B88C24EDC3B300BF381F /* Debug */,
+				2050B88D24EDC3B300BF381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2050B88E24EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2050B88F24EDC3B300BF381F /* Debug */,
+				2050B89024EDC3B300BF381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2050B85924EDC3B200BF381F /* Project object */;
+}
