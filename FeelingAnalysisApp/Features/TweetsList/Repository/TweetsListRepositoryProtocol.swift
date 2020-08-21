@@ -1,0 +1,1 @@
+protocol TweetsListRepositoryProtocol: AnyObject {}

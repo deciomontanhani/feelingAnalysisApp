@@ -12,6 +12,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var appCoordinator: AppCoordinator?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -22,10 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Programmatic UI setup
         // Set ViewController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
-            window = UIWindow(windowScene: windowScene)
-            window?.backgroundColor = .white
-            window?.rootViewController = ViewController()
-            window?.makeKeyAndVisible()
+            let window = UIWindow(windowScene: windowScene)
+            self.window = window
+            appCoordinator = AppCoordinator(window: window)
+            appCoordinator?.start()
         }
     }
 
@@ -56,7 +57,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
-
