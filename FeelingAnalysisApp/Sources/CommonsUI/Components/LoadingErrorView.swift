@@ -20,6 +20,12 @@ final class LoadingErrorView: UIView {
 
     weak var delegate: LoadingErrorViewProtocol?
 
+    private var text: String? {
+        didSet {
+            title.text = text
+        }
+    }
+
     private let spinner: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView()
         view.startAnimating()
@@ -31,6 +37,7 @@ final class LoadingErrorView: UIView {
         let label = UILabel()
         label.text = "Não foi possível realizar a busca"
         label.numberOfLines = 0
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -72,6 +79,10 @@ final class LoadingErrorView: UIView {
             }
         }
     }
+
+    func set(text: String? = "Não foi possível realizar a busca") {
+        self.text = text
+    }
 }
 
 private extension LoadingErrorView {
@@ -105,7 +116,7 @@ extension LoadingErrorView: ViewCode {
     func buildConstraints() {
         contentStack.center(in: self)
         contentStack.left(to: self, offset: 24)
-        contentStack.right(to: self, offset: -24)
+        contentStack.right(to: self, offset: 24)
     }
 
     func additionalSetup() {

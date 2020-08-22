@@ -232,6 +232,18 @@ public extension UIView {
     }
 
     @discardableResult
+    func horizontal(of view: UIView, offset: CGFloat = 0, isActive: Bool = true) -> [NSLayoutConstraint] {
+        translatesAutoresizingMaskIntoConstraints = false
+
+        let constraints = [
+            left(to: view, offset: offset, isActive: isActive),
+            right(to: view, offset: offset, isActive: isActive)
+        ]
+
+        return constraints
+    }
+
+    @discardableResult
     func leftToRight(of view: UIView, offset: CGFloat = 0, relation: NSLayoutConstraint.Relation = .equal, isActive: Bool = true) -> NSLayoutConstraint {
         translatesAutoresizingMaskIntoConstraints = false
         return left(to: view, view.rightAnchor, offset: offset, relation: relation, isActive: isActive)
@@ -287,13 +299,13 @@ public extension UIView {
 
         switch relation {
         case .equal:
-            return rightAnchor.constraint(equalTo: anchor ?? view.rightAnchor, constant: offset).set(isActive)
+            return rightAnchor.constraint(equalTo: anchor ?? view.rightAnchor, constant: (offset * -1)).set(isActive)
         case .lessThanOrEqual:
-            return rightAnchor.constraint(lessThanOrEqualTo: anchor ?? view.rightAnchor, constant: offset).set(isActive)
+            return rightAnchor.constraint(lessThanOrEqualTo: anchor ?? view.rightAnchor, constant: (offset * -1)).set(isActive)
         case .greaterThanOrEqual:
-            return rightAnchor.constraint(greaterThanOrEqualTo: anchor ?? view.rightAnchor, constant: offset).set(isActive)
+            return rightAnchor.constraint(greaterThanOrEqualTo: anchor ?? view.rightAnchor, constant: (offset * -1)).set(isActive)
         default:
-            return rightAnchor.constraint(equalTo: anchor ?? view.rightAnchor, constant: offset).set(isActive)
+            return rightAnchor.constraint(equalTo: anchor ?? view.rightAnchor, constant: (offset * -1)).set(isActive)
         }
     }
 
@@ -348,13 +360,13 @@ public extension UIView {
 
         switch relation {
         case .equal:
-            return bottomAnchor.constraint(equalTo: anchor ?? view.bottomAnchor, constant: offset).set(isActive)
+            return bottomAnchor.constraint(equalTo: anchor ?? view.bottomAnchor, constant: (offset * -1)).set(isActive)
         case .lessThanOrEqual:
-            return bottomAnchor.constraint(lessThanOrEqualTo: anchor ?? view.bottomAnchor, constant: offset).set(isActive)
+            return bottomAnchor.constraint(lessThanOrEqualTo: anchor ?? view.bottomAnchor, constant: (offset * -1)).set(isActive)
         case .greaterThanOrEqual:
-            return bottomAnchor.constraint(greaterThanOrEqualTo: anchor ?? view.bottomAnchor, constant: offset).set(isActive)
+            return bottomAnchor.constraint(greaterThanOrEqualTo: anchor ?? view.bottomAnchor, constant: (offset * -1)).set(isActive)
         default:
-            return bottomAnchor.constraint(equalTo: anchor ?? view.bottomAnchor, constant: offset).set(isActive)
+            return bottomAnchor.constraint(equalTo: anchor ?? view.bottomAnchor, constant: (offset * -1)).set(isActive)
         }
     }
 

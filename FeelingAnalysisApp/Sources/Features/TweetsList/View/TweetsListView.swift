@@ -7,6 +7,7 @@ final class TweetsListView: UIView {
     private lazy var searchBar: UISearchBar = {
         let view = UISearchBar()
         view.delegate = self
+        view.autocapitalizationType = .none
         view.placeholder = "Digite um usuário do Twitter aqui"
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -19,15 +20,15 @@ final class TweetsListView: UIView {
     }()
 
     private lazy var tableView: UITableView = {
-            let tableView = UITableView()
-    //        tableView.register(ShelfCardItemTableViewCell.self, forCellReuseIdentifier: ShelfCardItemTableViewCell.className)
-            tableView.dataSource = self
-            tableView.delegate = self
-            tableView.isScrollEnabled = false
-            tableView.showsVerticalScrollIndicator = false
-            tableView.translatesAutoresizingMaskIntoConstraints = false
-            return tableView
-        }()
+        let tableView = UITableView()
+        tableView.register(TweetCell.self, forCellReuseIdentifier: TweetCell.className)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 150
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
 
     init() {
         super.init(frame: .zero)
@@ -43,8 +44,8 @@ final class TweetsListView: UIView {
 extension TweetsListView: ViewCode {
     func buildHierarchy() {
         addSubview(searchBar)
-        addSubview(loadingErrorView)
         addSubview(tableView)
+        addSubview(loadingErrorView)
     }
 
     func buildConstraints() {
@@ -70,7 +71,24 @@ extension TweetsListView: ViewCode {
     }
 }
 
-extension TweetsListView: TweetsListViewProtocol {}
+extension TweetsListView: TweetsListViewProtocol {
+    func reloadTable() {
+        tableView.reloadData()
+    }
+
+    func showLoading() {
+        loadingErrorView.set(state: .loading)
+    }
+
+    func stopLoading() {
+        loadingErrorView.set(state: .hidden)
+    }
+
+    func showError(message: String?) {
+        loadingErrorView.set(text: message)
+        loadingErrorView.set(state: .error)
+    }
+}
 
 extension TweetsListView: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -81,22 +99,29 @@ extension TweetsListView: UISearchBarDelegate {
 
 extension TweetsListView: LoadingErrorViewProtocol {
     func retry() {
-        // delegate?.retry()
+        delegate?.retrySearch()
     }
 }
 
 extension TweetsListView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.didTapTweet(at: indexPath.row)
     }
 }
 
 extension TweetsListView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return delegate?.getTweetsCount() ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let delegate = delegate else { return UITableViewCell() }
+        let cell = tableView.dequeueReusableCell(with: TweetCell.self, for: indexPath)
+
+        let model = delegate.getTweetModel(at: indexPath.row)
+        let user = delegate.getCurrentUser()
+        cell.setup(username: user, tweet: model?.text)
+        return cell
     }
 }
