@@ -12,6 +12,7 @@
 		2049C25524F1DE03009BE622 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25424F1DE03009BE622 /* Encodable+Extensions.swift */; };
 		2049C25724F1E439009BE622 /* AnalysisObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25624F1E439009BE622 /* AnalysisObject.swift */; };
 		2049C25924F1E72D009BE622 /* AnalysisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25824F1E72D009BE622 /* AnalysisResponse.swift */; };
+		2049C25B24F2044E009BE622 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25A24F2044E009BE622 /* APIKeys.swift */; };
 		2050B86524EDC3B200BF381F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B86424EDC3B200BF381F /* AppDelegate.swift */; };
 		2050B86724EDC3B200BF381F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B86624EDC3B200BF381F /* SceneDelegate.swift */; };
 		2050B86B24EDC3B300BF381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2050B86A24EDC3B300BF381F /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		2049C25424F1DE03009BE622 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		2049C25624F1E439009BE622 /* AnalysisObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisObject.swift; sourceTree = "<group>"; };
 		2049C25824F1E72D009BE622 /* AnalysisResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisResponse.swift; sourceTree = "<group>"; };
+		2049C25A24F2044E009BE622 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		2050B86124EDC3B200BF381F /* FeelingAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelingAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2050B86424EDC3B200BF381F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2050B86624EDC3B200BF381F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 		20FD675524F0AE2900E6DF8D /* AppSupport */ = {
 			isa = PBXGroup;
 			children = (
+				2049C25A24F2044E009BE622 /* APIKeys.swift */,
 				2050B8CD24EF303600BF381F /* AppCoordinator.swift */,
 				2050B86424EDC3B200BF381F /* AppDelegate.swift */,
 				2050B86624EDC3B200BF381F /* SceneDelegate.swift */,
@@ -593,6 +596,7 @@
 				2049C25924F1E72D009BE622 /* AnalysisResponse.swift in Sources */,
 				2050B89524EDC8E400BF381F /* Constraints.swift in Sources */,
 				2050B8CE24EF303600BF381F /* AppCoordinator.swift in Sources */,
+				2049C25B24F2044E009BE622 /* APIKeys.swift in Sources */,
 				2050B8A124EDFF1700BF381F /* TweetsListViewControllerProtocol.swift in Sources */,
 				2050B8A224EDFF1700BF381F /* TweetsListCoodinatorProtocol.swift in Sources */,
 				20FD677124F1CA2D00E6DF8D /* TweetAnalysisView.swift in Sources */,

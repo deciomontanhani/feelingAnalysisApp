@@ -42,7 +42,7 @@ struct TweetsRequest: NetworkSession {
     }
 
     var headers: [String : String]? {
-        return ["Authorization": "bearer AAAAAAAAAAAAAAAAAAAAABPPGwEAAAAAPU9a1DYHThepOBOWaiEudIJaDUo%3DGTohfoCTaM3ZAY2jmDbDDCq7n3y3EW6M1fLyQcu9znrvYMQljx",
+        return ["Authorization": ApiKeys.twitterToken.rawValue,
                 "Content-Type": "application/json"]
     }
 }

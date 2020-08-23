@@ -29,7 +29,7 @@ struct GoogleAnalysisRequest: NetworkSession {
 
     var queryItems: [URLQueryItem] {
         return [URLQueryItem(name: "key",
-                             value: "AIzaSyBgzepNlTA4kQ2o1dPtmdSLkw6U5r9D4mI")]
+                             value: ApiKeys.googleKey.rawValue)]
     }
 
     var headers: [String : String]? {
