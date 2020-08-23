@@ -10,16 +10,27 @@ import Foundation
 
 struct TwitterResponse: Codable {
     let data: [Tweet]
+    let meta: TwitterMeta?
 
     enum CodingKeys: String, CodingKey {
-        case data = "data"
+        case data
+        case meta
     }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         data = try values.decodeIfPresent([Tweet].self, forKey: .data) ?? []
+        meta = try values.decodeIfPresent(TwitterMeta.self, forKey: .meta)
     }
 
+}
+
+struct TwitterMeta: Codable {
+    let nextToken: String?
+
+    enum CodingKeys: String, CodingKey {
+        case nextToken = "next_token"
+    }
 }
 
 struct Tweet: Codable {

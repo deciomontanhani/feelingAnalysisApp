@@ -23,10 +23,12 @@ final class TweetsListViewModel {
     }
 
     private func setCurrentSearch(_ text: String) {
-        if currentSearch == text {
-            tweets = []
+        guard currentSearch != text else {
+            return
         }
+        tweets = []
         currentSearch = text
+        controller?.showLoading()
     }
 }
 
@@ -52,7 +54,6 @@ extension TweetsListViewModel: TweetsListViewModelProtocol {
         guard !isFetchInProgress else { return }
         setCurrentSearch(user)
         isFetchInProgress = true
-        controller?.showLoading()
         repository?.getTweets(from: currentSearch,
                               nextPageToken: nextPageToken,
                               maxResults: maxResultsPerPage) { [weak self] result in
@@ -64,7 +65,8 @@ extension TweetsListViewModel: TweetsListViewModelProtocol {
                     self?.controller?.showError(message: "Não foi possível carregar informações desse usuário")
                     return
                 }
-                self?.tweets = response.data
+                self?.nextPageToken = response.meta?.nextToken
+                self?.tweets.append(contentsOf: response.data)
                 self?.controller?.reloadTable()
             case.failure(let error):
                 self?.controller?.showError(message: error.localizedDescription)
@@ -74,6 +76,13 @@ extension TweetsListViewModel: TweetsListViewModelProtocol {
     }
 
     func retrySearch() {
+        tweets = []
         searchProfile(currentSearch)
+    }
+
+    func fetchMore() {
+        if nextPageToken != nil {
+            searchProfile(currentSearch)
+        }
     }
 }

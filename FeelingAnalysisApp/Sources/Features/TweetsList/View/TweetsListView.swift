@@ -24,6 +24,7 @@ final class TweetsListView: UIView {
         tableView.register(TweetCell.self, forCellReuseIdentifier: TweetCell.className)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 150
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -123,5 +124,12 @@ extension TweetsListView: UITableViewDataSource {
         let user = delegate.getCurrentUser()
         cell.setup(username: user, tweet: model?.text)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let delegate = delegate else { return }
+        if indexPath.row == delegate.getTweetsCount() - 2 {
+            delegate.fetchMore()
+        }
     }
 }

@@ -39,6 +39,12 @@ final class TweetCell: UITableViewCell {
     required init?(coder: NSCoder) {
         return nil
     }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        userLabel.text = nil
+        tweetLabel.text = nil
+    }
 }
 
 extension TweetCell: ViewCode {

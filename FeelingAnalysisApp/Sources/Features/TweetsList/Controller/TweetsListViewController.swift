@@ -63,4 +63,8 @@ extension TweetsListViewController: TweetsListViewDelegate {
         guard let viewModel = viewModel else { return "" }
         return viewModel.getCurrentUser()
     }
+
+    func fetchMore() {
+        viewModel?.fetchMore()
+    }
 }

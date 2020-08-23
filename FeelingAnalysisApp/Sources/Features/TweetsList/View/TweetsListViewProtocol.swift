@@ -14,4 +14,5 @@ protocol TweetsListViewDelegate: AnyObject {
     func didTapTweet(at index: Int)
     func retrySearch()
     func getCurrentUser() -> String
+    func fetchMore()
 }
