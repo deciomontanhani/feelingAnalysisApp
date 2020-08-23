@@ -37,6 +37,11 @@ struct Tweet: Codable {
     let id: String
     let text: String
 
+    init(id: String, text: String) {
+        self.id = id
+        self.text = text
+    }
+
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case text = "text"

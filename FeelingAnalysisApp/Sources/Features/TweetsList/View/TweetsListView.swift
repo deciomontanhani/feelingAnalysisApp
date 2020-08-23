@@ -15,6 +15,7 @@ final class TweetsListView: UIView {
 
     private lazy var loadingErrorView: LoadingErrorView = {
         let view = LoadingErrorView()
+        view.set(state: .none(message: "Seja bem vindo!\nPesquise um usuário do Twitter na busca acima para começar."))
         view.delegate = self
         return view
     }()
@@ -67,7 +68,6 @@ extension TweetsListView: ViewCode {
     }
 
     func additionalSetup() {
-        loadingErrorView.set(state: .error)
         backgroundColor = .white
     }
 }

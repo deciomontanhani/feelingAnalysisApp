@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AnalysisObject: Encodable {
+struct AnalysisObject: Codable {
     let encodingType: String
     let document: AnalysisDocument
 
@@ -18,11 +18,11 @@ struct AnalysisObject: Encodable {
     }
 }
 
-struct AnalysisDocument: Encodable {
+struct AnalysisDocument: Codable {
     let type: AnalysisType
     let content: String
 }
 
-enum AnalysisType: String, Encodable {
+enum AnalysisType: String, Codable {
     case plainText = "PLAIN_TEXT"
 }

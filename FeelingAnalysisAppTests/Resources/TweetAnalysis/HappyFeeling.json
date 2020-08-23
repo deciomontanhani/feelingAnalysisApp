@@ -1,0 +1,19 @@
+{
+  "documentSentiment": {
+    "magnitude": 0.9,
+    "score": 0.9
+  },
+  "language": "pt-PT",
+  "sentences": [
+    {
+      "text": {
+        "content": "Estou muito feliz",
+        "beginOffset": 0
+      },
+      "sentiment": {
+        "magnitude": 0.9,
+        "score": 0.9
+      }
+    }
+  ]
+}

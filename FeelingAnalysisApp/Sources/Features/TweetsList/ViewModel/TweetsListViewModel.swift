@@ -70,7 +70,6 @@ extension TweetsListViewModel: TweetsListViewModelProtocol {
                 self?.controller?.reloadTable()
             case.failure(let error):
                 self?.controller?.showError(message: error.localizedDescription)
-                print(error)
             }
         }
     }

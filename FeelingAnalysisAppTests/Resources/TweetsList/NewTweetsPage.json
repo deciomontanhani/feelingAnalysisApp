@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "id": "12973812312606210320",
+            "text": "Hoje eu acordei para sorrir e mostrar os dentes"
+        },
+        {
+            "id": "1297329912368969026",
+            "text": "Hoje eu acorde para matar o presidente"
+        },
+        {
+            "id": "1295366855971231583",
+            "text": "Hoje tem festa, ela vai dar eu vou vai ser perfeito"
+        },
+        {
+            "id": "12950899455735123233",
+            "text": "Eu vou fazer o que você jamais teria feito"
+        }
+    ],
+    "meta": {
+        "newest_id": "12973812312606210320",
+        "oldest_id": "12950899455735123233",
+        "result_count": 4,
+        "next_token": "b26v89c19zqg8o3fo7mernro9hpk8z7ydfb7motzzjlvh"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "documentSentiment": {
+    "magnitude": 0.1,
+    "score": -0.1
+  },
+  "language": "pt-PT",
+  "sentences": [
+    {
+      "text": {
+        "content": "Estou andando pela rua",
+        "beginOffset": 0
+      },
+      "sentiment": {
+        "magnitude": 0.1,
+        "score": -0.1
+      }
+    }
+  ]
+}

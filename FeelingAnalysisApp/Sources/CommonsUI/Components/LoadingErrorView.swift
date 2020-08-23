@@ -13,7 +13,10 @@ protocol LoadingErrorViewProtocol: AnyObject {
 }
 
 enum LoadingErrorViewState {
-    case loading, error, hidden
+    case loading
+    case error
+    case hidden
+    case none(message: String)
 }
 
 final class LoadingErrorView: UIView {
@@ -76,6 +79,8 @@ final class LoadingErrorView: UIView {
                 self.error()
             case .hidden:
                 self.hidden()
+            case .none(let message):
+                self.none(message: message)
             }
         }
     }
@@ -105,6 +110,14 @@ private extension LoadingErrorView {
     }
     func hidden() {
         isHidden = true
+    }
+
+    func none(message: String) {
+        set(text: message)
+        title.isHidden = false
+        tryButton.isHidden = true
+        spinner.isHidden = true
+        isHidden = false
     }
 }
 

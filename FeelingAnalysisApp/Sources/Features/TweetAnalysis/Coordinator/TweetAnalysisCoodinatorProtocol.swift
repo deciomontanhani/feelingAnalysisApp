@@ -1,3 +1,1 @@
-protocol TweetAnalysisCoordinatorProtocol: AnyObject {
-    func goBack()
-}
+protocol TweetAnalysisCoordinatorProtocol: AnyObject {}

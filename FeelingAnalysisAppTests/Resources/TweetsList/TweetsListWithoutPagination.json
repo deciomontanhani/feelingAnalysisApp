@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id": "1297386062248120320",
+            "text": "Hoje eu estou muito triste"
+        },
+        {
+            "id": "1297329968989569026",
+            "text": "Hoje eu estou muito feliz"
+        },
+        {
+            "id": "1295366855973101583",
+            "text": "Eu gosto de caminhar pela rua"
+        },
+        {
+            "id": "1295089945573556233",
+            "text": "Gosto de passear pela manhã"
+        },
+        {
+            "id": "1295089164799680513",
+            "text": "Adoro escutar Beatles e Rolling Stones!"
+        }
+    ],
+    "meta": {
+        "newest_id": "1297386062248120320",
+        "oldest_id": "1295089164799680513",
+        "result_count": 5
+    }
+}

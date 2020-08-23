@@ -13,12 +13,12 @@
 		2049C25724F1E439009BE622 /* AnalysisObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25624F1E439009BE622 /* AnalysisObject.swift */; };
 		2049C25924F1E72D009BE622 /* AnalysisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25824F1E72D009BE622 /* AnalysisResponse.swift */; };
 		2049C25B24F2044E009BE622 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25A24F2044E009BE622 /* APIKeys.swift */; };
+		2049C26024F20AA7009BE622 /* TweetAnalysisViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C25F24F20AA7009BE622 /* TweetAnalysisViewModelTests.swift */; };
+		2049C26324F20BF4009BE622 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2049C26224F20BF4009BE622 /* XCTestCase+Extensions.swift */; };
 		2050B86524EDC3B200BF381F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B86424EDC3B200BF381F /* AppDelegate.swift */; };
 		2050B86724EDC3B200BF381F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B86624EDC3B200BF381F /* SceneDelegate.swift */; };
 		2050B86B24EDC3B300BF381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2050B86A24EDC3B300BF381F /* Assets.xcassets */; };
 		2050B86E24EDC3B300BF381F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2050B86C24EDC3B300BF381F /* LaunchScreen.storyboard */; };
-		2050B87924EDC3B300BF381F /* FeelingAnalysisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B87824EDC3B300BF381F /* FeelingAnalysisAppTests.swift */; };
-		2050B88424EDC3B300BF381F /* FeelingAnalysisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B88324EDC3B300BF381F /* FeelingAnalysisAppUITests.swift */; };
 		2050B89524EDC8E400BF381F /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B89424EDC8E400BF381F /* Constraints.swift */; };
 		2050B8A124EDFF1700BF381F /* TweetsListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B89724EDFF1700BF381F /* TweetsListViewControllerProtocol.swift */; };
 		2050B8A224EDFF1700BF381F /* TweetsListCoodinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B89824EDFF1700BF381F /* TweetsListCoodinatorProtocol.swift */; };
@@ -33,6 +33,15 @@
 		2050B8AD24EE000A00BF381F /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B8AC24EE000A00BF381F /* ViewCode.swift */; };
 		2050B8CE24EF303600BF381F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B8CD24EF303600BF381F /* AppCoordinator.swift */; };
 		2050B8D124EF4D1D00BF381F /* LoadingErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050B8D024EF4D1D00BF381F /* LoadingErrorView.swift */; };
+		20C3B5EF24F2152D009ACBDF /* SadFeeling.json in Resources */ = {isa = PBXBuildFile; fileRef = 20C3B5EE24F2152D009ACBDF /* SadFeeling.json */; };
+		20F7487024F216D40033FF61 /* JsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7486F24F216D40033FF61 /* JsonUtil.swift */; };
+		20F7487424F218C80033FF61 /* NeutralFeeling.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F7487324F218C80033FF61 /* NeutralFeeling.json */; };
+		20F7487624F219120033FF61 /* HappyFeeling.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F7487524F219120033FF61 /* HappyFeeling.json */; };
+		20F7487824F2229A0033FF61 /* TweetsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7487724F2229A0033FF61 /* TweetsListViewModelTests.swift */; };
+		20F7487C24F22C8E0033FF61 /* TweetsListWithoutPagination.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F7487B24F22C8E0033FF61 /* TweetsListWithoutPagination.json */; };
+		20F7488024F22E4E0033FF61 /* NewTweetsPage.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F7487F24F22E4E0033FF61 /* NewTweetsPage.json */; };
+		20F7488224F22E8C0033FF61 /* NoTweetsResult.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F7488124F22E8C0033FF61 /* NoTweetsResult.json */; };
+		20F7488424F236440033FF61 /* TweetPagination.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F7488324F236440033FF61 /* TweetPagination.json */; };
 		20FD673D24F09F5D00E6DF8D /* TweetsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD673C24F09F5D00E6DF8D /* TweetsRequest.swift */; };
 		20FD674024F09F7500E6DF8D /* TwitterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD673F24F09F7500E6DF8D /* TwitterResponse.swift */; };
 		20FD674724F09F9B00E6DF8D /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD674224F09F9B00E6DF8D /* NetworkMethod.swift */; };
@@ -66,13 +75,6 @@
 			remoteGlobalIDString = 2050B86024EDC3B200BF381F;
 			remoteInfo = FeelingAnalysisApp;
 		};
-		2050B88024EDC3B300BF381F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2050B85924EDC3B200BF381F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2050B86024EDC3B200BF381F;
-			remoteInfo = FeelingAnalysisApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		2049C25624F1E439009BE622 /* AnalysisObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisObject.swift; sourceTree = "<group>"; };
 		2049C25824F1E72D009BE622 /* AnalysisResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisResponse.swift; sourceTree = "<group>"; };
 		2049C25A24F2044E009BE622 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		2049C25F24F20AA7009BE622 /* TweetAnalysisViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetAnalysisViewModelTests.swift; sourceTree = "<group>"; };
+		2049C26224F20BF4009BE622 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		2050B86124EDC3B200BF381F /* FeelingAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelingAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2050B86424EDC3B200BF381F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2050B86624EDC3B200BF381F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,10 +93,7 @@
 		2050B86D24EDC3B300BF381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2050B86F24EDC3B300BF381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2050B87424EDC3B300BF381F /* FeelingAnalysisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingAnalysisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2050B87824EDC3B300BF381F /* FeelingAnalysisAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingAnalysisAppTests.swift; sourceTree = "<group>"; };
 		2050B87A24EDC3B300BF381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2050B87F24EDC3B300BF381F /* FeelingAnalysisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingAnalysisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2050B88324EDC3B300BF381F /* FeelingAnalysisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingAnalysisAppUITests.swift; sourceTree = "<group>"; };
 		2050B88524EDC3B300BF381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2050B89424EDC8E400BF381F /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		2050B89724EDFF1700BF381F /* TweetsListViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsListViewControllerProtocol.swift; sourceTree = "<group>"; };
@@ -108,6 +109,15 @@
 		2050B8AC24EE000A00BF381F /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		2050B8CD24EF303600BF381F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		2050B8D024EF4D1D00BF381F /* LoadingErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingErrorView.swift; sourceTree = "<group>"; };
+		20C3B5EE24F2152D009ACBDF /* SadFeeling.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SadFeeling.json; sourceTree = "<group>"; };
+		20F7486F24F216D40033FF61 /* JsonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
+		20F7487324F218C80033FF61 /* NeutralFeeling.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NeutralFeeling.json; sourceTree = "<group>"; };
+		20F7487524F219120033FF61 /* HappyFeeling.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HappyFeeling.json; sourceTree = "<group>"; };
+		20F7487724F2229A0033FF61 /* TweetsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsListViewModelTests.swift; sourceTree = "<group>"; };
+		20F7487B24F22C8E0033FF61 /* TweetsListWithoutPagination.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TweetsListWithoutPagination.json; sourceTree = "<group>"; };
+		20F7487F24F22E4E0033FF61 /* NewTweetsPage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NewTweetsPage.json; sourceTree = "<group>"; };
+		20F7488124F22E8C0033FF61 /* NoTweetsResult.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NoTweetsResult.json; sourceTree = "<group>"; };
+		20F7488324F236440033FF61 /* TweetPagination.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TweetPagination.json; sourceTree = "<group>"; };
 		20FD673C24F09F5D00E6DF8D /* TweetsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsRequest.swift; sourceTree = "<group>"; };
 		20FD673F24F09F7500E6DF8D /* TwitterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterResponse.swift; sourceTree = "<group>"; };
 		20FD674224F09F9B00E6DF8D /* NetworkMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
@@ -148,16 +158,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2050B87C24EDC3B300BF381F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2049C25C24F20A62009BE622 /* TweetsList */ = {
+			isa = PBXGroup;
+			children = (
+				20F7487724F2229A0033FF61 /* TweetsListViewModelTests.swift */,
+			);
+			path = TweetsList;
+			sourceTree = "<group>";
+		};
+		2049C25D24F20A80009BE622 /* TweetAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				2049C25F24F20AA7009BE622 /* TweetAnalysisViewModelTests.swift */,
+			);
+			path = TweetAnalysis;
+			sourceTree = "<group>";
+		};
+		2049C25E24F20A8B009BE622 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2049C25D24F20A80009BE622 /* TweetAnalysis */,
+				2049C25C24F20A62009BE622 /* TweetsList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2049C26124F20BD3009BE622 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2049C26224F20BF4009BE622 /* XCTestCase+Extensions.swift */,
+				20F7486F24F216D40033FF61 /* JsonUtil.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2049C26424F20C6B009BE622 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2049C26124F20BD3009BE622 /* Helpers */,
+				2049C25E24F20A8B009BE622 /* Features */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2049C26524F20C81009BE622 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20F7487A24F22C4E0033FF61 /* TweetsList */,
+				20F7487924F22AC40033FF61 /* TweetAnalysis */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		2050B85824EDC3B200BF381F = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +229,6 @@
 			children = (
 				2050B86124EDC3B200BF381F /* FeelingAnalysisApp.app */,
 				2050B87424EDC3B300BF381F /* FeelingAnalysisAppTests.xctest */,
-				2050B87F24EDC3B300BF381F /* FeelingAnalysisAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,7 +246,8 @@
 		2050B87724EDC3B300BF381F /* FeelingAnalysisAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				2050B87824EDC3B300BF381F /* FeelingAnalysisAppTests.swift */,
+				2049C26524F20C81009BE622 /* Resources */,
+				2049C26424F20C6B009BE622 /* Sources */,
 				2050B87A24EDC3B300BF381F /* Info.plist */,
 			);
 			path = FeelingAnalysisAppTests;
@@ -201,7 +256,6 @@
 		2050B88224EDC3B300BF381F /* FeelingAnalysisAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2050B88324EDC3B300BF381F /* FeelingAnalysisAppUITests.swift */,
 				2050B88524EDC3B300BF381F /* Info.plist */,
 			);
 			path = FeelingAnalysisAppUITests;
@@ -300,6 +354,27 @@
 				2050B8D024EF4D1D00BF381F /* LoadingErrorView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		20F7487924F22AC40033FF61 /* TweetAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				20C3B5EE24F2152D009ACBDF /* SadFeeling.json */,
+				20F7487324F218C80033FF61 /* NeutralFeeling.json */,
+				20F7487524F219120033FF61 /* HappyFeeling.json */,
+			);
+			path = TweetAnalysis;
+			sourceTree = "<group>";
+		};
+		20F7487A24F22C4E0033FF61 /* TweetsList */ = {
+			isa = PBXGroup;
+			children = (
+				20F7488324F236440033FF61 /* TweetPagination.json */,
+				20F7487B24F22C8E0033FF61 /* TweetsListWithoutPagination.json */,
+				20F7487F24F22E4E0033FF61 /* NewTweetsPage.json */,
+				20F7488124F22E8C0033FF61 /* NoTweetsResult.json */,
+			);
+			path = TweetsList;
 			sourceTree = "<group>";
 		};
 		20FD673E24F09F7500E6DF8D /* Model */ = {
@@ -481,24 +556,6 @@
 			productReference = 2050B87424EDC3B300BF381F /* FeelingAnalysisAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2050B87E24EDC3B300BF381F /* FeelingAnalysisAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2050B88E24EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisAppUITests" */;
-			buildPhases = (
-				2050B87B24EDC3B300BF381F /* Sources */,
-				2050B87C24EDC3B300BF381F /* Frameworks */,
-				2050B87D24EDC3B300BF381F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2050B88124EDC3B300BF381F /* PBXTargetDependency */,
-			);
-			name = FeelingAnalysisAppUITests;
-			productName = FeelingAnalysisAppUITests;
-			productReference = 2050B87F24EDC3B300BF381F /* FeelingAnalysisAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -513,10 +570,6 @@
 						CreatedOnToolsVersion = 11.6;
 					};
 					2050B87324EDC3B300BF381F = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 2050B86024EDC3B200BF381F;
-					};
-					2050B87E24EDC3B300BF381F = {
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = 2050B86024EDC3B200BF381F;
 					};
@@ -537,7 +590,6 @@
 			targets = (
 				2050B86024EDC3B200BF381F /* FeelingAnalysisApp */,
 				2050B87324EDC3B300BF381F /* FeelingAnalysisAppTests */,
-				2050B87E24EDC3B300BF381F /* FeelingAnalysisAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -557,13 +609,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2050B87D24EDC3B300BF381F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				20F7488424F236440033FF61 /* TweetPagination.json in Resources */,
+				20F7487C24F22C8E0033FF61 /* TweetsListWithoutPagination.json in Resources */,
+				20F7488024F22E4E0033FF61 /* NewTweetsPage.json in Resources */,
+				20F7487424F218C80033FF61 /* NeutralFeeling.json in Resources */,
+				20F7487624F219120033FF61 /* HappyFeeling.json in Resources */,
+				20C3B5EF24F2152D009ACBDF /* SadFeeling.json in Resources */,
+				20F7488224F22E8C0033FF61 /* NoTweetsResult.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,15 +677,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2050B87924EDC3B300BF381F /* FeelingAnalysisAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2050B87B24EDC3B300BF381F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2050B88424EDC3B300BF381F /* FeelingAnalysisAppUITests.swift in Sources */,
+				20F7487824F2229A0033FF61 /* TweetsListViewModelTests.swift in Sources */,
+				2049C26024F20AA7009BE622 /* TweetAnalysisViewModelTests.swift in Sources */,
+				20F7487024F216D40033FF61 /* JsonUtil.swift in Sources */,
+				2049C26324F20BF4009BE622 /* XCTestCase+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,11 +691,6 @@
 			isa = PBXTargetDependency;
 			target = 2050B86024EDC3B200BF381F /* FeelingAnalysisApp */;
 			targetProxy = 2050B87524EDC3B300BF381F /* PBXContainerItemProxy */;
-		};
-		2050B88124EDC3B300BF381F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2050B86024EDC3B200BF381F /* FeelingAnalysisApp */;
-			targetProxy = 2050B88024EDC3B300BF381F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -858,48 +900,6 @@
 			};
 			name = Release;
 		};
-		2050B88F24EDC3B300BF381F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DS2P948Y69;
-				INFOPLIST_FILE = FeelingAnalysisAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FeelingAnalysisApp;
-			};
-			name = Debug;
-		};
-		2050B89024EDC3B300BF381F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DS2P948Y69;
-				INFOPLIST_FILE = FeelingAnalysisAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.deciomontanhani.FeelingAnalysisAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FeelingAnalysisApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -926,15 +926,6 @@
 			buildConfigurations = (
 				2050B88C24EDC3B300BF381F /* Debug */,
 				2050B88D24EDC3B300BF381F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2050B88E24EDC3B300BF381F /* Build configuration list for PBXNativeTarget "FeelingAnalysisAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2050B88F24EDC3B300BF381F /* Debug */,
-				2050B89024EDC3B300BF381F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
