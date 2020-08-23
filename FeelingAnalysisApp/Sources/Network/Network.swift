@@ -53,7 +53,8 @@ extension NetworkSession {
         urlRequest.httpMethod = self.method.rawValue
         urlRequest.allHTTPHeaderFields = self.headers
 
-        if let body = self.body, let httpBody = try? JSONSerialization.data(withJSONObject: body, options: []) {
+        if let body = self.body,
+            let httpBody = try? JSONSerialization.data(withJSONObject: body, options: []) {
             urlRequest.httpBody = httpBody
         }
 

@@ -1,3 +1,3 @@
 protocol TweetsListCoordinatorProtocol: AnyObject {
-    func goBack()
+    func goToAnalysis(tweet: Tweet)
 }

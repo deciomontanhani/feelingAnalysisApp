@@ -45,11 +45,7 @@ extension TweetsListViewModel: TweetsListViewModelProtocol {
 
     func didTapTweet(at index: Int) {
         guard let tweet = tweets[optional: index] else { return }
-        print("tweet clicado foi: \(tweet.text)")
-    }
-
-    func goBack() {
-        coordinator?.goBack()
+        coordinator?.goToAnalysis(tweet: tweet)
     }
 
     func searchProfile(_ user: String) {

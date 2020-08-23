@@ -8,7 +8,6 @@ protocol TweetsListViewProtocol: UIView {
 }
 
 protocol TweetsListViewDelegate: AnyObject {
-    func goBack()
     func searchProfile(_ user: String)
     func getTweetsCount() -> Int
     func getTweetModel(at index: Int) -> Tweet?

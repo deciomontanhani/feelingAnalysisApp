@@ -55,10 +55,6 @@ extension TweetsListViewController: TweetsListViewDelegate {
         viewModel?.searchProfile(user)
     }
 
-    func goBack() {
-        viewModel?.goBack()
-    }
-
     func retrySearch() {
         viewModel?.retrySearch()
     }

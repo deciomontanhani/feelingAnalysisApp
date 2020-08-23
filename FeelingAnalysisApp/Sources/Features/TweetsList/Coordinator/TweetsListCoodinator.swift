@@ -16,13 +16,16 @@ final class TweetsListCoordinator {
         viewModel.set(repository: repository)
         viewModel.set(coordinator: self)
         viewController.set(viewModel: viewModel)
-//        currentNavigationController.setNavigationBarHidden(true, animated: false)
         currentNavigationController.pushViewController(viewController, animated: true)
     }
 }
 
 extension TweetsListCoordinator: TweetsListCoordinatorProtocol {
-    func goBack() {
-        currentNavigationController.popViewController(animated: true)
+    func goToAnalysis(tweet: Tweet) {
+        let coordinator =
+            TweetAnalysisCoordinator(currentNavigationController: currentNavigationController,
+                                     tweet: tweet)
+
+        coordinator.start()
     }
 }
