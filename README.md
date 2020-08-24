@@ -30,14 +30,16 @@ Add this file in **/AppSupport** folder, and hit the run button in Xcode.
 
 ## Frequently Asked Questions
 
-#### Why did you use MVVM?
-The reason is that MVVM is one of the most used architectures in companies today, it makes unit testing much easier, because the purpose of MVVM is that the code is broken up into classes with a small number of well defined responsibilities. 
+#### Why did I use MVVM?
+The reason is that MVVM is one of the most used architectures in companies today, it makes unit testing much easier, because the purpose of MVVM is that the code is broken up into classes with a small number of well defined responsibilities. Following up SOLID principals and having a clean, maintainable and testable code.
 
-#### How did you mock the dependencies?
+#### How did I mock the dependencies?
 I use a tool called Swift Mock Generator for Xcode. This tool is a plugin and command line tool to generate spy, dummy, partial spy classes automatically, without add any third libraries in your project. I highly recommend!
 
 #### Why not using Storyboards/Xibs?
 There are several reasons why I prefer to create my views programmatically, but the main reason is that it improves the build time of the app. This is topic that many huge companies are concerned.
+Another reason is that it is on my roadmap to implement Buck and using Xib / Storyboard can cause some extra issues.
+
 
 ## Roadmap
 - implements Buck Build System
