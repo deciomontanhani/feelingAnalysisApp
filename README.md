@@ -2,7 +2,7 @@
 # Tweet Analysis App
 > Tweets Analysis App, using URLSession, Twitter API and Google Natural Language API
 
-[![Swift Version][swift-image]][swift-url] [![License][license-image]][license-url] [![Swift Version][swift-image]][swift-url] [![License][license-image]][license-url] ![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Swift Version][swift-image]][swift-url] [![Swift Version][swift-image]][swift-url] [![License][license-image]][license-url] ![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 An iOS App that lists a user's tweets and classifies them by emotion.
 
