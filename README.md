@@ -6,7 +6,7 @@
 
 An iOS App that lists a user's tweets and classifies them by emotion.
 
-![home](images/home.png) ![search](images/home-user.png) ![search](images/analysis-result.png)
+![home](images/noname.png)
 
 ## Requirements
 - Xcode 11
