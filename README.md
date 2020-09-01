@@ -25,7 +25,7 @@ bash <(curl -Ls https://install.tuist.io)
 
 After that, to generate the .xcworkspace and .xcodeproj, run the following commands:
 
-```
+```bash
 tuist up # Setting up the environment
 tuist focus # generate the files and open in Xcode
 ```
