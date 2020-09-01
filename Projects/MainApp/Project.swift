@@ -10,7 +10,9 @@ let project = Project(name: "FeelingAnalysisApp",
                                infoPlist: "FeelingAnalysisApp/Info.plist",
                                sources: ["FeelingAnalysisApp/Sources/**"],
                                resources: ["FeelingAnalysisApp/Resources/**"],
-                               dependencies: []),
+                               dependencies: [
+                            .project(target: "Alamofake", path: .relativeToManifest("../Alamofake"))
+                        ]),
                         Target(name: "FeelingAnalysisAppTests",
                                platform: .iOS,
                                product: .unitTests,

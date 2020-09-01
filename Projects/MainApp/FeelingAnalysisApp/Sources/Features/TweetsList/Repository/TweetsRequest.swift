@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofake
 
 struct TweetsRequest: NetworkSession {
 

@@ -1,6 +1,6 @@
 import Foundation
 
-protocol NetworkSession {
+public protocol NetworkSession {
     var scheme: String { get }
     var baseUrl: String { get }
     var method: NetworkMethod { get }
@@ -12,7 +12,7 @@ protocol NetworkSession {
     var cachePolicy: URLRequest.CachePolicy { get }
 }
 
-extension NetworkSession {
+public extension NetworkSession {
     var scheme: String { return "https" }
 
     var headers: [String: String]? {
@@ -72,9 +72,11 @@ extension NetworkSession {
         }
         task.resume()
     }
+}
 
+private extension NetworkSession {
     /// It's a helper for send response on main thread
-    private func completionHelper<Response: Decodable>(result: (Result<Response, NetworkError>), completion: @escaping (Result<Response, NetworkError>) -> Void) {
+    func completionHelper<Response: Decodable>(result: (Result<Response, NetworkError>), completion: @escaping (Result<Response, NetworkError>) -> Void) {
         DispatchQueue.main.async {
             completion(result)
         }

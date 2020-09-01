@@ -6,6 +6,8 @@
 //  Copyright © 2020 Decio Montanhani. All rights reserved.
 //
 
+import Alamofake
+
 final class TweetAnalysisRepository: TweetAnalysisRepositoryProtocol {
     func getAnalysis(from body: AnalysisObject, completion: @escaping (Result<AnalysisResponse, NetworkError>) -> Void) {
         GoogleAnalysisRequest(tweet: body).execute(completion: completion)

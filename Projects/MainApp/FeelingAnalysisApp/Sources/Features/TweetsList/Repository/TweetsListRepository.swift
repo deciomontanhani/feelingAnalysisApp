@@ -1,3 +1,5 @@
+import Alamofake
+
 final class TweetsListRepository: TweetsListRepositoryProtocol {
     func getTweets(from user: String,
                    nextPageToken: String?,

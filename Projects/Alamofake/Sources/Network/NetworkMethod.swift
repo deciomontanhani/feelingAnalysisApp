@@ -1,6 +1,6 @@
 import Foundation
 
-enum NetworkMethod: String {
+public enum NetworkMethod: String {
     /// `DELETE` method.
     case delete = "DELETE"
     /// `GET` method.
