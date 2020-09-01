@@ -14,6 +14,22 @@ An iOS App that lists a user's tweets and classifies them by emotion.
 ## How to run the project
 Clone or Download the project and follow these steps:.
 
+#### Generate project with Tuist
+In order not to commit .xcodeproj files (bye merge conflicts!) and much more cleaner project settings, I decided to use [Tuist](https://github.com/tuist/tuist).
+
+If you don't have Tuist installed in your Mac, don't worry. It's so easy, just run this command to install:
+
+```
+bash <(curl -Ls https://install.tuist.io)
+```
+
+After that, to generate the .xcworkspace and .xcodeproj, run the following commands:
+
+```
+tuist up # Setting up the environment
+tuist focus # generate the files and open in Xcode
+```
+
 #### Api Keys
 First of all, you'll have to generate API Key for **[Google Natural Language API](https://cloud.google.com/natural-language/)** and **[Twitter API](https://developer.twitter.com)**.
 After generating these keys, create a swift file ***APIKeys.swift*** and complete with the keys, like the code below:
@@ -26,7 +42,7 @@ enum  ApiKeys: String {
 	case twitterToken = "bearer [YOUR_TWITTER_TOKEN_HERE]"
 }
 ```
-Add this file in **/AppSupport** folder, and hit the run button in Xcode.
+Add this file in **Projects/MainApp/FeelingAnalysisApp/Sources/AppSupport** folder, and then run ```tuist focus``` to generate the project. Tap run button and enjoy it!
 
 ## Frequently Asked Questions
 
